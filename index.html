@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="cart">
+        <p>Cart({{ cart.length }})</p>
+      </div>
+      <Product :premium="premium" @add-to-cart="updateCart"></Product>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
